@@ -1,0 +1,26 @@
+<header>
+  <nav class="navbar navbar-expand">
+    <a class="navbar-brand" href="#">RMusicStore</a>
+    <ul class="navbar-nav">
+      <li class="dropdown" dropdown>
+        <a dropdownToggle class="nav-link dropdown-toggle" id="navbarCadastroLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cadastros
+        </a>
+        <ul *dropdownMenu class="dropdown-menu" aria-labelledby="navbarCadastroLink">
+          <li class="dropdown-item">
+            <a class="nav-link" role="button" [routerLink]="['/admin/generos']">Generos</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="nav-link" role="button" [routerLink]="['/admin/midias']">Tipos de Mídias</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="nav-link" role="button" [routerLink]="['/admin/artistas']">Artistas</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="nav-link" role="button" [routerLink]="['/admin/albuns']">Albuns</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
