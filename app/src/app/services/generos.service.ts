@@ -16,6 +16,6 @@ export class GenerosService {
   ) { }
 
   getAll(intervalo: string = '', pagina: number = 1) {
-    return this.http.get<GeneroResponse>(`${environment.apiUrl}/genders?intervalo=${intervalo}&pg=${pagina}`, {headers: this.headers } );
+    return this.http.get<GeneroResponse>(`${environment.apiUrl}/gender?intervalo=${intervalo}&pg=${pagina}`, {headers: this.headers } );
   }
 }

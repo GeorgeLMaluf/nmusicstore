@@ -11,6 +11,8 @@ namespace api
 {
     public class Program
     {
+
+        public const string cnnString = "Host=127.0.0.1;Port=5432;Database=musicstore_development; Username=postgres; Password=pgsql";
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
