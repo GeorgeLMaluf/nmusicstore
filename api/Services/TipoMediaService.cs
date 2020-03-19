@@ -55,7 +55,7 @@ namespace api.Services
             {
                 var cmd = cnx.CreateCommand();
                 cmd.CommandText = SQL.ToString();
-                cmd.Parameters.AddWithValue("@invervalo", intervalo.ToUpper());
+                cmd.Parameters.AddWithValue("@intervalo", intervalo.ToUpper());
                 var retorno = new List<TipoMedia>();
                 using (var reader = cmd.ExecuteReader())
                 {
